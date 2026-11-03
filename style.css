@@ -1,0 +1,122 @@
+
+/* Garage 2816 - Week 3 CSS */
+/* Using charcoal gray, black, gold, and white to match the logo */
+
+/* Main background and text settings for the website */
+body {
+    background-color: #303030;
+    color: #F5F5F5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 1rem;
+}
+
+/* Darker background behind the logo and page title */
+header {
+    background-color: #1C1C1C;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Gold title to match the Garage 2816 logo */
+h1 {
+    color: #D4AF37;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Keep the section headings gold on all pages */
+h2 {
+    color: #D4AF37;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Smaller headings will use white text */
+h3 {
+    color: #F5F5F5;
+    font-size: 1.2rem;
+}
+
+/* Keep the paragraphs readable without too much space between them */
+p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+/* Dark background for the navigation menu */
+nav {
+    background-color: #1C1C1C;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+/* Gold navigation links to match the rest of the website */
+nav a {
+    color: #D4AF37;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0.75rem;
+    text-decoration: none;
+}
+
+/* Change the navigation links to white when the mouse is over them */
+nav a:hover {
+    color: #F5F5F5;
+    text-decoration: underline;
+}
+
+/* Add a little space around the main page content */
+main {
+    padding: 1rem;
+}
+
+/* Keep some space between the different sections */
+section {
+    margin-bottom: 1rem;
+}
+
+/* Reduce the spacing between items in a list */
+li {
+    margin-bottom: 0.25rem;
+}
+
+/* Use gold for links throughout the website */
+a {
+    color: #D4AF37;
+}
+
+/* Keep the footer the same on all three pages */
+footer {
+    background-color: #1C1C1C;
+    color: #F5F5F5;
+    padding: 0.75rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Make sure pictures fit on the page without stretching */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add a gold line below the header */
+#site-header {
+    border-bottom: 0.2rem solid #D4AF37;
+}
+
+/* Keep the logo a consistent size on all pages */
+.company-logo {
+    max-width: 18rem;
+    height: auto;
+}
+
+/* Reduce the space around each section so more fits on the page */
+.content-section {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.75rem;
+}

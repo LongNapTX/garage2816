@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,11 +17,13 @@
              alt="Garage 2816 Motorcycle Business Logo">
     </header>
 
-    <!-- Navigation menu -->
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About Us</a> |
-        <a href="contact.html">Contact Us</a>
+    <!-- Flexbox navigation links -->
+    <nav aria-label="Main navigation">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
     </nav>
 
     <!-- Main page content -->
@@ -78,6 +79,58 @@
                 <li>High-resolution photography and video</li>
                 <li>Personalized delivery and inspection</li>
             </ul>
+        </section>
+
+        <!-- Featured motorcycles arranged with Flexbox -->
+        <section class="content-section" id="our-collection">
+            <h2>Our Collection</h2>
+            <p>A few motorcycles from my personal collection.</p>
+
+            <div class="motorcycle-gallery">
+
+                <article class="motorcycle-card">
+                    <img src="honda_cb550.jpg"
+                         alt="1977 Honda CB550 Four">
+                    <h3>1977 Honda CB550 Four</h3>
+                    <p>My 1st Motorcycle.</p>
+                </article>
+
+                <article class="motorcycle-card">
+                    <img src="yamaha_mini.jpg"
+                         alt="Yamaha Mini Supermoto">
+                    <h3>Yamaha Mini Supermoto</h3>
+                    <p>TTR50 Pitbike (My Son's 1st Motorcycle).</p>
+                </article>
+
+                <article class="motorcycle-card">
+                    <img src="kawasaki_kx500.jpg"
+                         alt="2001 Kawasaki KX500">
+                    <h3>2001 Kawasaki KX500</h3>
+                    <p>The most powerful 2-Stroke Kawasaki Made.</p>
+                </article>
+
+                <article class="motorcycle-card">
+                    <img src="suzuki_hayabusa.jpg"
+                         alt="2026 Suzuki Hayabusa">
+                    <h3>2026 Suzuki Hayabusa</h3>
+                    <p>The bike that started it all!</p>
+                </article>
+
+                <article class="motorcycle-card">
+                    <img src="yamaha_vmax.png"
+                         alt="2013 Yamaha VMAX">
+                    <h3>2013 Yamaha VMAX</h3>
+                    <p>200HP Monster.</p>
+                </article>
+
+                <article class="motorcycle-card">
+                    <img src="fatboy_se.jpg"
+                         alt="Harley-Davidson Fat Boy Screamin' Eagle">
+                    <h3>Harley-Davidson Fat Boy Screamin' Eagle</h3>
+                    <p>The only Fat Boy CVO Model.</p>
+                </article>
+
+            </div>
         </section>
 
     </main>

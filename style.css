@@ -10,6 +10,38 @@ body {
     line-height: 1.6;
 }
 
+/* Week 5 - CSS Grid page layout */
+
+/* Grid controls the overall page structure */
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "navigation"
+        "content"
+        "footer";
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* Place the main page sections in the grid */
+#site-header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: navigation;
+}
+
+main {
+    grid-area: content;
+}
+
+footer {
+    grid-area: footer;
+}
+
 /* Header and logo */
 header {
     background-color: #1C1C1C;
@@ -35,13 +67,13 @@ p {
     margin-bottom: 1rem;
 }
 
-/* Flexbox navigation menu */
+/* Flexbox navigation from Week 4 */
 nav {
     background-color: #1C1C1C;
     padding: 1rem;
 }
 
-/* Flexbox centers the links and allows wrapping */
+/* Center the links and allow them to wrap */
 .nav-links {
     display: flex;
     justify-content: center;
@@ -73,8 +105,11 @@ nav {
 /* Main content area */
 main {
     max-width: 1200px;
+    width: 100%;
+    min-width: 0;
     margin: 0 auto;
     padding: 2rem;
+    box-sizing: border-box;
 }
 
 section {
@@ -110,7 +145,7 @@ img {
     margin: 0 auto;
 }
 
-/* Flexbox motorcycle collection */
+/* Flexbox motorcycle collection from Week 4 */
 
 /* Cards wrap into new rows on smaller screens */
 .motorcycle-gallery {
@@ -122,7 +157,7 @@ img {
     margin-top: 2rem;
 }
 
-/* Each card grows or shrinks with available space */
+/* Cards adjust based on available space */
 .motorcycle-card {
     flex: 1 1 280px;
     max-width: 350px;
@@ -157,9 +192,15 @@ footer {
     padding: 1.5rem;
 }
 
-/* Smaller screens */
+/* Week 5 - Responsive design */
+
+/* Adjust spacing and cards on smaller screens */
 @media (max-width: 600px) {
     main {
+        padding: 1rem;
+    }
+
+    .content-section {
         padding: 1rem;
     }
 
